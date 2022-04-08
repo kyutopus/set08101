@@ -1,0 +1,260 @@
+/*Global Styles*/
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    font-size: large;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+/*-----------------Index page----------------------*/
+#index-body {
+    display: grid;
+    
+}
+
+#index-header {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+#index-main {
+    display: flex;
+  
+}
+
+#sections {
+    position: relative;
+    
+}
+
+#home_bird {
+    position: absolute;
+    height: 1100px;
+    left: -50px;
+    z-index: -1;
+}
+
+/*--------------Navigation Container------------------*/
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#logo-container {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 10%;  
+}
+
+#nav-button-container {
+    position: absolute;
+    right: 10%;
+}
+
+.nav-button {
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+
+}
+
+#current-page {
+    border-color: white;
+}
+
+/*----------------Main Container--------------------*/
+main {
+    display: flex;
+    flex-direction: column;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Intro paragraph*/
+.intro-container {
+    font-size: larger;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Planets page*/
+.planets-container {
+    font-size: larger;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#planet {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Game page*/
+.game-container {
+    font-size: larger;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#game {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Container that the user interacts with*/
+.interact-container {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: auto auto ;
+    
+}
+
+#learn-space-container {
+    display: grid;
+}
+
+audio {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;  
+ 
+}
+
+
+#next  {
+    margin-left: auto;
+    margin-right: auto;  
+    margin-top: 50px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+#learn-space {
+    height: 350px;
+}
+
+h2 {
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+#learn-more-button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----------------Grid container--------------------*/
+
+.grid-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+.bird {
+    height: 100px;
+    border-radius: 100px;
+    margin: 20px,20px,20px,20px;
+}
+
+.grid-item {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-weight: lighter;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;    
+}
+
+/*--------------Specific to the Quiz Page---------------*/
+
+.quiz-intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#instruction {
+    background-color: grey;
+    border-style: solid;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    text-align: center;  
+}
+
+#instruct-text {
+    border-radius: 100%;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+/*----------------Footer Container----------------*/
+
+footer {
+    display: flex;
+    margin: 50px;
+}
+
+#NASA-logo {
+    margin-left: 60%;
+}
