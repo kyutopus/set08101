@@ -125,7 +125,28 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+.planets{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#sun {
+    display: grid;
+    margin-left: 300px 300px;
+    margin-right: auto;
+}
+
+#sun_img{
+   
+}
+
+.target{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 /*Game page*/
 .game-container {
     font-size: larger;
@@ -155,6 +176,7 @@ main {
 
 #learn-space-container {
     display: grid;
+    grid-template-columns: auto auto ;
 }
 
 audio {
