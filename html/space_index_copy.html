@@ -12,9 +12,10 @@
 </head>
 <body>
     <header>
+    <!--<embed src="../audio/space_background.mp3" loop="true" autostart="true" width="2" height="0">-->
         <nav>  
-            <a href="../html/space_index.html" id="logo-container" ><img id="" src="../images/space_log.PNG" alt="Space logo" height="200px" title="Back to main page we go">
-                </a>
+            <a href="../html/space_index.html" id="logo-container" ><img id="" src="../images/space_log.PNG" alt="Space logo" height="200px" title="Back to main page we go"></a>
+            <h1>Space Odysseia</h1>
             <div id="nav-button-container">
                 <a href="../html/space_learn.html"><button class="nav-button" title="Back to main learning page">Learn</button></a>
                 <a href="../html/space_game.html"><button class="nav-button" title="Let's play a game">Game</button></a>
@@ -23,20 +24,29 @@
         </nav>
     </header>
     <main>
-        <p>Learn facts about solar system in three main catagories of plants, astorites and space crafts.</p>
-        <a href="../html/space_learn.html"><button class="homeButton">Learn</button></a>
-        <p>Play the game that will test your knowledge of space in the form of a game where you are a space explorer.</p>
-        <a href="../html/space_game.html"><button class="homeButton">Game</button></a>
-        <p>Here you can view all the pictures used in this page along with some caption and descriptions of the pictures.</p>
-        <a href="../html/gallary.html"><button class="homeButton">Gallary</button></a>
-        <img id="homespace" src="../images/space_index.jpg" alt="Space Nebula" height="1000px">
+
+    
+        <section id="index_one">
+            <p>Welcome to Space Odysseia</p>
+            <p>Play the game that will test your knowledge of space in the form of a game where you are a space explorer.</p>
+            <p>Here you can view all the pictures used in this page along with some caption and descriptions of the pictures.</p>
+        </section>
+        <div class="m-4">
+            <div class="card" style="width: 300px;">
+                <img src="../images/astroids.jpg" class="card-img-top" alt="Learn">
+                <div class="card-body text-center">
+                    <h3 class="card-title text-dark" >Learn</h3>
+                    <p class="card-text text-dark">Learn facts about solar system in three main catagories of plants, astorites and space crafts.</p>
+                    <a href="../html/space_learn.html" class="btn btn-primary">Learn</a>
+                </div>
+            </div>
+        </div>
+        <section>
+            <img id="homespace" src="../images/space_index.jpg" alt="Space Nebula" height="1000px">
+        </section>
+        <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
     </main>
-    <h1>Hello Bootstrap world</h1>
-    <div class="alert alert-primary" role="alert">
-        A simple primary alert—check it out!
-    </div>
-    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
     <footer>
         <p>Created by Acrie <br>More Exploring on: <a href="https://hubblesite.org/"> Hubble Space Telescope, </a><a href="https://www.space.com/">Space</a></p>
         <a href="https://www.nasa.gov/" id="NASA-logo"><img src="../images/nasa_logo.png" height="150px" alt="Logo of NASA Space"></a>
