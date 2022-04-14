@@ -53,6 +53,10 @@ nav {
 
 }
 
+h1 {
+    font-size:xx-large;
+}
+
 #current {
     border-color: white;
     border-radius: 10px;
@@ -64,6 +68,7 @@ nav {
     color: white;
     text-decoration: none;
     position: relative; 
+    margin-left: 20px;
 }
 
 /*Footer Style*/
@@ -109,7 +114,7 @@ h2{
 }
 
 #sun {
-    margin-left: 50px;
+    margin-left: 00px;
     margin-right: 000px;
 }
 
@@ -119,7 +124,7 @@ h2{
 }
 
 #mercury {
-    margin-left: 40px;
+    margin-left: 0px;
     margin-right: 000px;
 }
 
@@ -129,7 +134,7 @@ h2{
 }
 
 #venus_im {
-    margin-left: 50px;
+    margin-left: 100px;
     padding: 20px;
 }
 
@@ -139,7 +144,7 @@ h2{
 }
 
 #mars_im {
-    margin-left: 100px;
+    margin-left: 150px;
     padding: 20px;
 }
 
@@ -166,4 +171,9 @@ h2{
 #pluto_im {
     margin-left: 300px;
     padding: 20px;
+}
+
+/*astroid*/
+#ceres_im {
+    margin-left: 550px;
 }
