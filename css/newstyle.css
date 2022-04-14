@@ -82,36 +82,24 @@ footer {
 }
 
 /*Planets*/
-#planet {
-    margin-left: auto;
-    margin-right: auto;
-}
 .planets{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-
-#sun {
     display: grid;
     margin-left: 300px 300px;
-    margin-right: auto;
-}
-
-.interact-container {
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 200px 200px ;
-    width: px;
-    
 }
 
 h2{
     margin-left: auto;
     margin-right: auto;
 }
+
+.interact-container {
+    display: flex;
+}
+
+
 
 #learn-space-container {
     display: grid;
@@ -120,12 +108,62 @@ h2{
     margin-right: auto;
 }
 
-.interact-container {
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    display: grid;
-    grid-template-columns: auto auto ;
-    
+#sun {
+    margin-left: 50px;
+    margin-right: 000px;
+}
+
+#sun_im {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#mercury {
+    margin-left: 40px;
+    margin-right: 000px;
+}
+
+#mercury_im {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+#venus_im {
+    margin-left: 50px;
+    padding: 20px;
+}
+
+#earth_im {
+    margin-left: 350px;
+    padding: 20px;
+}
+
+#mars_im {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#jupiter_im {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#saturn_im {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#uranus_im {
+    margin-left: 350px;
+    padding: 20px;
+}
+
+#neptune_im {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#pluto_im {
+    margin-left: 300px;
+    padding: 20px;
 }

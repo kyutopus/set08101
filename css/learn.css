@@ -63,7 +63,8 @@ nav {
     display: flex;
     color: white;
     text-decoration: none;
-    position: relative; 
+    position: relative;
+    margin-left: 100px; 
 }
 
 /*Footer Style*/
@@ -114,7 +115,7 @@ h2{
 }
 
 #sun_im {
-    margin-left: 200px;
+    margin-left: 100px;
     padding: 20px;
 }
 
@@ -128,8 +129,8 @@ h2{
     padding: 20px;
 }
 
-#mars_im {
-    margin-left: 200px;
+#venus_im {
+    margin-left: 50px;
     padding: 20px;
 }
 
@@ -143,3 +144,27 @@ h2{
     padding: 20px;
 }
 
+#jupiter_im {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#saturn_im {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#uranus_im {
+    margin-left: 350px;
+    padding: 20px;
+}
+
+#neptune_im {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#pluto_im {
+    margin-left: 300px;
+    padding: 20px;
+}
