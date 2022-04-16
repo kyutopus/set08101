@@ -4,32 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Space Odysseia Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/newstyle.css">
+    <title>Space Odysseia Shuttles</title>
     <!---W3School (https://www.w3schools.com/html/html_favicon.asp)-->
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
     <header>
-    <!--<embed src="../audio/space_background.mp3" loop="true" autostart="true" width="2" height="0">-->
         <nav>  
-            <a href="../html/space_index.html" id="logo-container" ><img id="" src="../images/space_log.PNG" alt="Space logo" height="200px" title="Back to main page we go"></a>
-            <h1>Space Odysseia</h1>
+            <a href="../html/space_index.html" id="logo-container"><img id="" src="../images/space_log.PNG" alt="Space logo" height="200px" title="Back to main page we go!">
+                </a>
+            <h1><a href="../html/space_index.html"><button class="index_butt" title="Oh yes, this takes you to main page too!"> Space Odysseia </button></a></h1>
             <div id="nav-button-container">
-                <a href="../html/space_learn.html"><button class="nav-button" title="Back to main learning page">Learn</button></a>
-                <a href="../html/space_game.html"><button class="nav-button" title="Let's play a game">Game</button></a>
-                <a href="../html/gallary.html"><button class="nav-button" title="Pictures everywhere!">Gallery</button></a>
+                <button class="nav_butt" id="current" title="You are on the learning page!">Learn</button>
+                <a href="../html/space_game.html"><button class="nav_butt" title="Let's play a game">Game</button></a>
+                <a href="../html/gallary.html"><button class="nav_butt" title="Pictures everywhere!">Gallery</button></a>
             </div>
         </nav>
-    </header>
+    </header>    
     <main>
-
-    
-        <section id="index_one">
-            <p>Welcome to Space Odysseia</p>
-            <p>Play the game that will test your knowledge of space in the form of a game where you are a space explorer.</p>
-            <p>Here you can view all the pictures used in this page along with some caption and descriptions of the pictures.</p>
+        <section class="planets-container">
+            <p id="planet" >Welcome to Space Odysseia where you can learn more about space, play a game and view the gallary for amazing pictures!</p>
         </section>
         <div class="m-4">
             <div class="card" style="width: 300px;">
@@ -39,6 +35,20 @@
                     <p class="card-text text-dark">Learn facts about solar system in three main catagories of plants, astorites and space crafts.</p>
                     <a href="../html/space_learn.html" class="btn btn-primary">Learn</a>
                 </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-3 col-md-4 bg-dark text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="col-sm-9 col-md-4 bg-dark text-white">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </div>
+              <div class="col-sm-15 col-md-4 bg-dark text-white">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </div>
             </div>
         </div>
         <section>
