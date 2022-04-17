@@ -203,3 +203,53 @@ h2{
 #spartnik_im {
     padding-bottom: 10px;
 }
+
+#xdragon_img {
+    padding-bottom: 15px;
+}
+
+.shuttle_container {
+    width: 40%;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747  ;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.shuttle_text_card {
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747  ;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.shuttle_pad {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#hubble_img {
+    height: 60px;
+    width: 170px;
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+#hubble_card {
+
+}
