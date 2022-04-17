@@ -20,6 +20,18 @@ body {
     margin-right: 00;
 }
 
+.index_text_card {
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747  ;
+    border-radius: 40px;
+    padding: 20px;
+}
+
 /*Planets page*/
 .planets-container {
     font-size: larger;
@@ -248,8 +260,4 @@ h2{
     margin: 0 auto;
     float: none;
     margin-bottom: 10px;
-}
-
-#hubble_card {
-
 }
