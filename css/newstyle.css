@@ -21,7 +21,7 @@ body {
 }
 
 .index_text_card {
-    font-size: large;
+    font-size: larger;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -33,7 +33,7 @@ body {
 }
 
 /*Planets page*/
-.planets-container {
+.planets_container {
     font-size: larger;
     width: 80%;
     margin-left: auto;
@@ -260,4 +260,8 @@ h2{
     margin: 0 auto;
     float: none;
     margin-bottom: 10px;
+}
+
+#card_text {
+    font-size: larger;
 }
