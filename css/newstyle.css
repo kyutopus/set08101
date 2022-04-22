@@ -12,7 +12,7 @@ body {
     color: white;
     font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
-    overflow-x:hidden;
+    overflow-x:hidden; 
 }
 
 /*Index page(use if needed)*/
@@ -28,7 +28,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    background-color: #283747  ;
+    background-color: #283747;
     border-radius: 40px;
     padding: 20px;
 }
@@ -42,7 +42,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    background-color: #283747  ;
+    background-color: #283747;
     border-radius: 40px;
     padding: 20px;
 }
@@ -201,6 +201,148 @@ h2{
 #pluto_im {
     margin-left: 300px;
     padding: 20px;
+}
+
+.planet_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.sun_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 55%;
+}
+
+.mercury_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 55%;
+}
+
+.venus_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 55%;
+}
+
+.earth_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 75%;
+}
+
+.mars_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 75%;
+}
+
+.jupiter_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 30%;
+}
+
+.saturn_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 55%;
+}
+
+.uranus_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 57%;
+}
+
+.neptune_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 50%;
+}
+
+.pluto_text_card {
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #283747;
+    border-radius: 40px;
+    padding: 20px;
+    width: 50%;
 }
 
 /*astroid*/
