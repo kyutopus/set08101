@@ -473,15 +473,8 @@ h2{
     margin-bottom: auto;
     border: 5px;
     padding: 10px;
-    text-align: center;
   }
 
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
   /*Game*/
 
