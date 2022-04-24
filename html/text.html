@@ -33,19 +33,20 @@
         <section id="user_name">
             <form action="../html/space_game_last_good.html"  onsubmit="callme()">
                 <p>Enter your name here for adventure: </p>
-                <input type="text" id="name_ad">
+                <input type="text" id="name_ad" placeholder="  Enter name here"> 
                 <button type="submit button" value="submit" class="btn btn-primary btn-lg">Submit</button>
             </form>
             <script src="../js/space_game_name.js"></script>
         </section>
-        <section onbeforeunload="return myFunction()">
-            <p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
-            <a href="https://www.w3schools.com">Click here to go to w3schools.com</a>
+        <section >
+            <a href="../js/space_game_name.js">Click here to go to Main page</a>
             <script>
-                window.onbeforeunload = function(e){
-                    var dialogText = 'Dialog text here';
-                    e.returnValue = dialogText;
-                    return dialogText;
+                window.onbeforeunload = function() {
+                    if (data_needs_saving()) {
+                    return "Do you really want to leave our brilliant application?";
+                    } else {
+                        return;
+                    }
                 };
             </script>
         </section>
