@@ -17,8 +17,8 @@
                 </a>
             <h1><a href="../html/space_index.html"><button class="index_butt" title="Oh yes, this takes you to main page too!"> Space Odysseia </button></a></h1>
             <div id="nav-button-container">
-                <a href="../html/space_learn.html"><button class="nav_butt btn-outline-secondary" id="current" title="You are on the learning page!">Learn</button></a>
-                <a href="../html/space_game.html"><button class="nav_butt btn-outline-secondary" title="Let's play a game">Game</button></a>
+                <a href="../html/space_learn.html"><button class="nav_butt btn-outline-secondary" title="You are on the learning page!">Learn</button></a>
+                <a href="../html/space_game.html"><button class="nav_butt btn-outline-secondary" id="current" title="You are on Game page">Game</button></a>
                 <a href="../html/gallary.html"><button class="nav_butt btn-outline-secondary" title="Pictures everywhere!">Gallery</button></a>
             </div>
         </nav>
@@ -30,13 +30,25 @@
                 Your objective is to collect as much samples as possible with your crew of officers.
             </p>
         </section>
-        <section class="">
-
+        <section id="user_name">
+            <form action="../html/space_game_last_good.html"  onsubmit="callme()">
+                <p>Enter your name here for adventure: </p>
+                <input type="text" id="name_ad">
+                <button type="submit button" value="submit" class="btn btn-primary btn-lg">Submit</button>
+            </form>
+            <script src="../js/space_game_name.js"></script>
+            <!--<script>
+                //code to time out and move to next page
+                setTimeout(function(){
+                   window.location.href = '../html/space_asteroids.html';
+                },10000);
+            </script>-->
         </section>
     </main>
     <footer>
         <div id="footer_div">
-            <p>Created by Acrie <br>More Exploring on: <a href="https://hubblesite.org/"> Hubble Space Telescope, </a><a href="https://www.space.com/">Space</a></p>
+            <!--Opening link in new tab-->
+            <p>Created by Acrie <br>More Exploring on: <a href="https://hubblesite.org/" target="_blank"> Hubble Space Telescope</a>,<a href="https://www.space.com/" target="_blank">Space News</a></p>
             <a href="https://www.nasa.gov/"></a>
             <!--Sound player code from W3School with small tweaks to give sound box (https://www.w3schools.com/tags/att_audio_autoplay.asp)-->
             <!--Music from youtube (https://www.youtube.com/watch?v=bYAwXGwjHh0)-->
@@ -44,7 +56,7 @@
                 <source src="../audio/traveling_through_space.mp3">
             </audio>-->
         </div>
-        <img id="nasa_logo" src="../images/nasalogow.png" height="150px" alt="Logo of NASA Space" >
+        <a href="https://www.nasa.gov/"><img id="nasa_logo" src="../images/nasalogow.png" height="150px" alt="Logo of NASA Space" ></a>
     </footer>
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
