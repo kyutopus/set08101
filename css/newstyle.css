@@ -53,7 +53,7 @@ nav {
     align-items: center;
 }
 
-#nav-button-container {
+#nav_butt_con {
     position: absolute;
     right: 10%;
 }
@@ -93,7 +93,7 @@ h1 {
     padding: 5px;
 }
 
-#logo-container{
+#logo_con{
     display: flex;
     color: white;
     text-decoration: none;
@@ -130,13 +130,7 @@ h2{
     margin-right: auto;
 }
 
-.interact-container {
-    display: flex;
-}
-
-
-
-#learn-space-container {
+#learn_space_container {
     display: grid;
     grid-template-columns: auto auto ;
     margin-left: auto;
