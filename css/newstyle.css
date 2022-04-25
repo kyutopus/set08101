@@ -500,6 +500,29 @@ h2{
     padding: 10px;
   }
 
+  #center_mc1_text {
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: auto;
+    border: 5px;
+    padding: 10px;
+  }
+
+  #center_mc2_text {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: auto;
+    border: 5px;
+    padding: 10px;
+  }
+
+  #center_mc3_text {
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: auto;
+    border: 5px;
+    padding: 10px;
+  }
 
   /*Game*/
 
