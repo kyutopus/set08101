@@ -470,7 +470,7 @@ h2{
 
   #center_sc2_text {
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: auto;
     border: 5px;
     padding: 10px;
@@ -478,7 +478,15 @@ h2{
 
   #center_sc3_text {
     margin: auto;
-    margin-top: 80px;
+    margin-top: 70px;
+    margin-bottom: auto;
+    border: 5px;
+    padding: 10px;
+  }
+
+  #center_sc4_text {
+    margin: auto;
+    margin-top: 45px;
     margin-bottom: auto;
     border: 5px;
     padding: 10px;
