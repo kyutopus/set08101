@@ -410,7 +410,6 @@ h2{
 
 
 /*Sun Page*/
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -419,7 +418,7 @@ h2{
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
   
-  /* This container is needed to position the front and back side */
+  /* Positioning the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -429,7 +428,7 @@ h2{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Do an horizontal flip*/
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
@@ -442,9 +441,9 @@ h2{
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+  /* Style the front side */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: black;
     color: black;
   }
   
@@ -461,9 +460,25 @@ h2{
     padding: 10px;
   }
 
-  #center_text {
+  #center_sc1_text {
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: auto;
+    border: 5px;
+    padding: 10px;
+  }
+
+  #center_sc2_text {
     margin: auto;
     margin-top: 40px;
+    margin-bottom: auto;
+    border: 5px;
+    padding: 10px;
+  }
+
+  #center_sc3_text {
+    margin: auto;
+    margin-top: 80px;
     margin-bottom: auto;
     border: 5px;
     padding: 10px;
@@ -495,10 +510,10 @@ h2{
     background-color: #283747;
     border-radius: 40px;
     padding: 20px;
-}
+  }
 
-/*underline*/
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: underline; }
-a:active { text-decoration: underline; }
+    /*underline*/
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:active { text-decoration: underline; }
