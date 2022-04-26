@@ -9,7 +9,8 @@ body {
   width: 100%;
   height: 100%;
   /*image credit to -> https://unsplash.com/photos/c9OCWLka764*/
-  background-image: url('../images/space_crawl.jpg'); 
+  background: url('../images/spacey.JPG');
+  /*background-color: black;*/
   overflow: hidden;
   background-repeat: no-repeat;
   background-attachment: fixed;
