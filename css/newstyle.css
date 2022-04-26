@@ -492,9 +492,9 @@ h2{
     padding: 10px;
   }
 
-  #center_sc4_text {
+  #center_sc5_text {
     margin: auto;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-bottom: auto;
     border: 5px;
     padding: 10px;
@@ -527,6 +527,14 @@ h2{
   #center_vc1_text {
     margin: auto;
     margin-top: 50px;
+    margin-bottom: auto;
+    border: 5px;
+    padding: 10px;
+  }
+
+  #center_small_text {
+    margin: auto;
+    margin-top: 5px;
     margin-bottom: auto;
     border: 5px;
     padding: 10px;
