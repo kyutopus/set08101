@@ -17,34 +17,52 @@
                 </a>
             <h1><a href="../html/space_index.html"><button class="index_butt" title="Oh yes, this takes you to main page too!"> Space Odysseia </button></a></h1>
             <div id="nav_butt_con">
-                <a href="../html/space_learn.html"><button class="nav_butt btn-outline-secondary" title="Backt to learn more about space">Learn</button></a>
-                <a href="../html/space_game.html"><button class="nav_butt btn-outline-secondary" id="current" title="You are on Game page. Press to go back to main page of game">Game</button></a>
+                <a href="../html/space_learn.html"><button class="nav_butt btn-outline-secondary" title="You are on the learning page!">Learn</button></a>
+                <a href="../html/space_game.html"><button class="nav_butt btn-outline-secondary" id="current" title="You are on Game page">Game</button></a>
                 <a href="../html/gallary.html"><button class="nav_butt btn-outline-secondary" title="Pictures everywhere!">Gallery</button></a>
             </div>
         </nav>
-    </header>    
-    <main>
-        <section class="planets_container">
-            <p id="planet" >
-                Welcome to the game where you will be playing as an explorer from Galaxy Orion from the planet Vulcanus. You have been sent off on the mission on GMS Odysseia to explore the now assumed to be extincted Milky Way Galaxy.
-                Your objective is to collect as much samples as possible with your crew of officers.
-            </p>
-        </section>
-        <section id="user_name">
-            <form action="../html/space_game_last_good.html"  onsubmit="callme()">
-                <p>Enter your name here for adventure: </p>
-                <input type="text" id="name_ad">
-                <button type="submit button" value="submit" class="btn btn-primary btn-lg">Submit</button>
-            </form>
-            <script src="../js/space_game_name.js"></script>
-            <!--<script>
-                //code to time out and move to next page
-                setTimeout(function(){
-                   window.location.href = '../html/space_asteroids.html';
-                },10000);
-            </script>-->
-        </section>
-    </main>
+    </header> 
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text h1" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h1 id="quizzy_quest" class="h1">What is the smallest planet in the world?</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/game_adventure.js"></script>
     <footer>
         <div id="footer_div">
             <!--Opening link in new tab-->
