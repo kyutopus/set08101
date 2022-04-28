@@ -43,7 +43,7 @@ let quests = [
         pick3: "Orus",
         pick4: "Vesta",
         answer: 4,
-    }
+    },
     {
         quest: "Test add",
         pick1: "1",
@@ -55,7 +55,7 @@ let quests = [
 ]
 
 const points = 5
-const question_limit = 5
+const question_limit = 4
 
 start_quize = () => {
     q_count = 0
