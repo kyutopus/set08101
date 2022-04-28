@@ -58,9 +58,9 @@ start_quize = () => {
 
 new_questionget = () => {
     if(avail_q.length === 0 || q_count > question_limit) {
-        localStorage.setItem('mostRecentScore', mark)
+        sessionStorage.setItem('mostRecentScore', mark)
 
-        return window.location.assign('/end.html')
+        return window.location.assign('../html/space_game_last_good.html')
     }
 
     q_count++
