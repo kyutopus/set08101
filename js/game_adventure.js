@@ -1,113 +1,121 @@
 const quest = document.querySelector('#quizzy_quest');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
-const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#progressBarFull');
+const option = Array.from(document.querySelectorAll('.option_text'));
+const quiz_text = document.querySelector('#quiz_text');
+const mark_text = document.querySelector('#mark');
+const quizzyfullbar = document.querySelector('#quizzyfullbar');
 
-let currentQuestion = {}
-let acceptingAnswers = true
-let score = 0
-let questionCounter = 0
-let availableQuestions = []
+let current_quest = {}
+let correct_ans = true
+let mark = 0
+let q_count = 0
+let avail_q = []
 
-let questions = [
+let quests = [
     {
         quest: 'What is the smallest planet in the solar system?',
-        choice1: 'Earth',
-        choice2: 'Venus',
-        choice3: 'Mercury',
-        choice4: 'Pluto',
+        pick1: 'Earth',
+        pick2: 'Venus',
+        pick3: 'Mercury',
+        pick4: 'Pluto',
         answer: 3,
     },
     {
         quest:
             "The tallest building in the world is located in which city?",
-        choice1: "Dubai",
-        choice2: "New York",
-        choice3: "Shanghai",
-        choice4: "None of the above",
+        pick1: "Dubai",
+        pick2: "New York",
+        pick3: "Shanghai",
+        pick4: "None of the above",
         answer: 1,
     },
     {
         quest: "What percent of American adults believe that chocolate milk comes from brown cows?",
-        choice1: "20%",
-        choice2: "18%",
-        choice3: "7%",
-        choice4: "33%",
+        pick1: "20%",
+        pick2: "18%",
+        pick3: "7%",
+        pick4: "33%",
         answer: 3,
     },
     {
         quest: "Approximately what percent of U.S. power outages are caused by squirrels?",
-        choice1: "10-20%",
-        choice2: "5-10%",
-        choice3: "15-20%",
-        choice4: "30%-40%",
+        pick1: "10-20%",
+        pick2: "5-10%",
+        pick3: "15-20%",
+        pick4: "30%-40%",
         answer: 1,
     }
 ]
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const points = 5
+const question_limit = 3
 
-startGame = () => {
-    questionCounter = 0
-    score = 0
-    availableQuestions = [...questions]
-    getNewQuestion()
+start_quize = () => {
+    q_count = 0
+    mark = 0
+    avail_q = [...quests]
+    new_questionget()
 }
 
-getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
+new_questionget = () => {
+    if(avail_q.length === 0 || q_count > question_limit) {
+        localStorage.setItem('mostRecentScore', mark)
 
         return window.location.assign('/end.html')
     }
 
-    questionCounter++
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    q_count++
+    quiz_text.innerText = `Question ${q_count} of ${question_limit}`
+    quizzyfullbar.style.width = `${(q_count/question_limit) * 50}%`
     
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionsIndex]
-    quest.innerText = currentQuestion.quest
+    const questionsIndex = Math.floor(Math.random() * avail_q.length)
+    current_quest = avail_q[questionsIndex]
+    quest.innerText = current_quest.quest
 
-    choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
+    option.forEach(pick => {
+        const number = pick.dataset['number']
+        pick.innerText = current_quest['pick' + number]
     })
 
-    availableQuestions.splice(questionsIndex, 1)
+    avail_q.splice(questionsIndex, 1)
 
-    acceptingAnswers = true
+    correct_ans = true
 }
 
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return
+option.forEach(pick => {
+    pick.addEventListener('click', e => {
+        if(!correct_ans) return
 
-        acceptingAnswers = false
+        correct_ans = false
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        let classToApply = selectedAnswer == current_quest.answer ? 'correct' : 'incorrect'
 
         if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
+            incrementScore(points)
+        }
+
+        if(classToApply === 'incorect') {
+            decreaseScore(points)
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
-
-        }, 1000)
+            new_questionget()
+        }, 1200)
     })
 })
 
 incrementScore = num => {
-    score +=num
-    scoreText.innerText = score
+    mark +=num
+    mark_text.innerText = mark
 }
 
-startGame()
+decreaseScore = num => {
+    mark -=num
+    mark_text.innerText = mark
+}
+
+start_quize()

@@ -572,16 +572,16 @@ h2{
     margin-bottom: 0.8rem;
     width: 100%;
     border-radius: 4px;
-    background: rgb(18, 93, 255);
+    background: #283747;
     font-size: 3rem;
     min-width: 80rem;
 }
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
-    transform: scale(1.02);
-    transform: transform 100ms;
+    box-shadow: 0 0.5rem 2rem 0 #0d4e94;
+    transform: scale(1.05);
+    transform: transform 90ms;
 }
 
 .choice-prefix {
@@ -589,7 +589,7 @@ h2{
     color: white;
 }
 
-.choice-text {
+.option_text {
     padding: 2rem;
     width: 100%;
 }
@@ -622,25 +622,29 @@ h2{
 #progressBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid rgb(11,223,36);
+    border: 0.2rem solid white;
     margin-top: 2rem;
     margin-bottom: 60px;
     border-radius: 50px;
     overflow: hidden;
 }
 
-#progressBarFull {
+#quizzyfullbar {
     height: 100%;
-    background: rgb(11,223,36);
+    background: #0d8094;
     width: 0%;
 }
 
-#progressText {
+#quiz_text {
     color: black;
 }
 
 .quizzy_quest {
     text-align: center;
+}
+
+#mark {
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
