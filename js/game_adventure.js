@@ -21,33 +21,33 @@ let quests = [
     },
     {
         quest:
-            "The tallest building in the world is located in which city?",
-        pick1: "Dubai",
-        pick2: "New York",
-        pick3: "Shanghai",
+            "Which planet is named after the Greek god Hermes",
+        pick1: "Venus",
+        pick2: "Mercury",
+        pick3: "Jupiter",
         pick4: "None of the above",
+        answer: 2,
+    },
+    {
+        quest: "Which 4 moons of the planets was identified by Galileo Galilei in 1600s?",
+        pick1: "Jupiter",
+        pick2: "Saturn",
+        pick3: "Uranus",
+        pick4: "Titan",
         answer: 1,
     },
     {
-        quest: "What percent of American adults believe that chocolate milk comes from brown cows?",
-        pick1: "20%",
-        pick2: "18%",
-        pick3: "7%",
-        pick4: "33%",
-        answer: 3,
-    },
-    {
-        quest: "Approximately what percent of U.S. power outages are caused by squirrels?",
-        pick1: "10-20%",
-        pick2: "5-10%",
-        pick3: "15-20%",
-        pick4: "30%-40%",
-        answer: 1,
+        quest: "Which of the astroid was nearly classified as a dwarf planet",
+        pick1: "Titus",
+        pick2: "Hail Bob",
+        pick3: "Orus",
+        pick4: "Vesta",
+        answer: 4,
     }
 ]
 
 const points = 5
-const question_limit = 3
+const question_limit = 4
 
 start_quize = () => {
     q_count = 0

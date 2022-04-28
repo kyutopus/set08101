@@ -567,91 +567,82 @@ h2{
     padding: 20px;
   }
 
-  .choice-container {
-    display: flex;
-    margin-bottom: 0.8rem;
-    width: 100%;
-    border-radius: 4px;
+  .quizzy_choice_con {
     background: #283747;
-    font-size: 3rem;
-    min-width: 80rem;
-}
+    font-size: 40px;
+ }
 
-.choice-container:hover {
+ .quizzy_choice_con:hover {
     cursor: pointer;
     box-shadow: 0 0.5rem 2rem 0 #0d4e94;
     transform: scale(1.05);
     transform: transform 90ms;
-}
+ }
 
-.choice-prefix {
-    padding: 2rem 2.5rem;
-    color: white;
-}
-
-.option_text {
+ .option_text {
     padding: 2rem;
     width: 100%;
-}
+    text-align: center;
+ }
 
-.correct {
+ .correct {
     background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
-}
+ }
 
 .incorrect {
     background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
-}
+ }
 
-/* Heads up Display */
-#hud {
+ /* style game quize */
+ #quizzy {
     display: flex;
     justify-content: space-between;
-}
+ }
 
-.hud-prefix {
+ .quizzy_pre {
     text-align: center;
-    font-size: 2rem;
+    font-size: 40px;
     color: white;
-}
+ }
 
-.hud-main-text {
+ .quizzy_maintex {
     text-align: center;
     color: white;
-}
+ }
 
-#progressBar {
-    width: 20rem;
-    height: 3rem;
-    border: 0.2rem solid white;
-    margin-top: 2rem;
+ #quizzybar {
+    width: 200px;
+    height: 40px;
+    border: 5px solid white;
+    margin-top: 20px;
     margin-bottom: 60px;
-    border-radius: 50px;
+    border-radius: 15px;
     overflow: hidden;
-}
+ }
 
-#quizzyfullbar {
+ #quizzyfullbar {
     height: 100%;
     background: #0d8094;
     width: 0%;
-}
+ }
 
-#quiz_text {
-    color: black;
-}
-
-.quizzy_quest {
-    text-align: center;
-}
-
-#mark {
+ #quiz_text {
     color: white;
-}
+ }
 
-@media screen and (max-width: 768px) {
+ .quizzy_quest {
+    text-align: center;
+ }
+
+ #mark {
+    color: white;
+ }
+
+ @media screen and (max-width: 7px) {
     .choice-container {
-        min-width: 40rem;
+        min-width: 40px;
     }
-}
+ }
 
 
     /*underline*/
