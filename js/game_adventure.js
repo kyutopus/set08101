@@ -19,6 +19,7 @@ let quests = [
         pick4: 'Pluto',
         answer: 3,
     },
+
     {
         quest: "Which planet is named after the Greek god Hermes?",
         pick1: "Venus",
@@ -27,6 +28,7 @@ let quests = [
         pick4: "None of the above",
         answer: 2,
     },
+
     {
         quest: "4 moons of which planets was identified by Galileo Galilei in 1600s?",
         pick1: "Jupiter",
@@ -35,6 +37,7 @@ let quests = [
         pick4: "Titan",
         answer: 1,
     },
+
     {
         quest: "Which of the astroid was nearly classified as a dwarf planet?",
         pick1: "Titus",
@@ -43,6 +46,7 @@ let quests = [
         pick4: "Vesta",
         answer: 4,
     },
+
     {
         quest: "Test add",
         pick1: "1",
@@ -50,11 +54,20 @@ let quests = [
         pick3: "4",
         pick4: "3",
         answer: 4,
+    },
+
+    {
+        quest: "Alice Hunt",
+        pick1: "1",
+        pick2: "2",
+        pick3: "4",
+        pick4: "3",
+        answer: 4,
     }
 ]
 
 const points = 5
-const question_limit = 4
+const question_limit = 5
 
 start_quize = () => {
     q_count = 0
