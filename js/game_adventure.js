@@ -99,7 +99,7 @@ option.forEach(pick => {
         let classToApply = selectedAnswer == current_quest.answer ? 'right' : 'wrong'
 
         if(classToApply === 'right') {
-            incrementScore(points)
+            increase_score(points)
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
@@ -111,7 +111,7 @@ option.forEach(pick => {
     })
 })
 
-incrementScore = num => {
+increase_score = num => {
     mark +=num
     mark_text.innerText = mark
 }
