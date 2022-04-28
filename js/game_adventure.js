@@ -66,6 +66,11 @@ let quests = [
     }
 ]
 
+const questionsRemove = Math.floor(Math.random() * avail_q.length)
+let random_q = avail_q[questionsRemove]
+quests.splice(random_q, 1)
+console.log(quests)
+
 const points = 5
 const question_limit = 5
 
