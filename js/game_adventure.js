@@ -63,7 +63,16 @@ let quests = [
         pick3: "4",
         pick4: "3",
         answer: 4,
-    }
+    },
+
+    {
+        quest: "Ace Hunt",
+        pick1: "1",
+        pick2: "2",
+        pick3: "4",
+        pick4: "3",
+        answer: 4,
+    },
 ]
 
 const questionsRemove = Math.floor(Math.random() * avail_q.length)
@@ -72,7 +81,7 @@ quests.splice(random_q, 1)
 console.log(quests)
 
 const points = 5
-const question_limit = 5
+const question_limit = 6
 
 start_quize = () => {
     q_count = 0
@@ -90,7 +99,7 @@ new_questionget = () => {
 
     q_count++
     quiz_text.innerText = `Question ${q_count} of ${question_limit}`
-    quizzyfullbar.style.width = `${(q_count/question_limit) * 50}%`
+    quizzyfullbar.style.width = `${(q_count/question_limit) * 100}%`
     
     const questionsIndex = Math.floor(Math.random() * avail_q.length)
     current_quest = avail_q[questionsIndex]
