@@ -20,8 +20,7 @@ let quests = [
         answer: 3,
     },
     {
-        quest:
-            "Which planet is named after the Greek god Hermes",
+        quest: "Which planet is named after the Greek god Hermes?",
         pick1: "Venus",
         pick2: "Mercury",
         pick3: "Jupiter",
@@ -29,7 +28,7 @@ let quests = [
         answer: 2,
     },
     {
-        quest: "Which 4 moons of the planets was identified by Galileo Galilei in 1600s?",
+        quest: "4 moons of which planets was identified by Galileo Galilei in 1600s?",
         pick1: "Jupiter",
         pick2: "Saturn",
         pick3: "Uranus",
@@ -37,7 +36,7 @@ let quests = [
         answer: 1,
     },
     {
-        quest: "Which of the astroid was nearly classified as a dwarf planet",
+        quest: "Which of the astroid was nearly classified as a dwarf planet?",
         pick1: "Titus",
         pick2: "Hail Bob",
         pick3: "Orus",
@@ -97,14 +96,10 @@ option.forEach(pick => {
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
 
-        let classToApply = selectedAnswer == current_quest.answer ? 'correct' : 'incorrect'
+        let classToApply = selectedAnswer == current_quest.answer ? 'right' : 'wrong'
 
-        if(classToApply === 'correct') {
+        if(classToApply === 'right') {
             incrementScore(points)
-        }
-
-        if(classToApply === 'incorect') {
-            decreaseScore(points)
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
@@ -118,11 +113,6 @@ option.forEach(pick => {
 
 incrementScore = num => {
     mark +=num
-    mark_text.innerText = mark
-}
-
-decreaseScore = num => {
-    mark -=num
     mark_text.innerText = mark
 }
 
