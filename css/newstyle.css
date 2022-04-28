@@ -410,7 +410,8 @@ h2{
 
 
 /*Sun Page*/
-.flip-card {
+/* flip card ->https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+.flippy_card {
     background-color: transparent;
     width: 300px;
     height: 200px;
@@ -428,7 +429,7 @@ h2{
   }
   
   /* Do an horizontal flip*/
-  .flip-card:hover .flip-card-inner {
+  .flippy_card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
