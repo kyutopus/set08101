@@ -12,7 +12,7 @@ let avail_q = []
 
 let quests = [
     {
-        quest: 'What is the smallest planet in the solar system?',
+        quest: 'What is the smallest planet in the solar system ?',
         pick1: 'Earth',
         pick2: 'Venus',
         pick3: 'Mercury',
@@ -21,7 +21,7 @@ let quests = [
     },
 
     {
-        quest: "Which planet is named after the Greek god Hermes?",
+        quest: "Which planet is named after the Greek god Hermes ?",
         pick1: "Venus",
         pick2: "Mercury",
         pick3: "Jupiter",
