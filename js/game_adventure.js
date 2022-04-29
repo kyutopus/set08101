@@ -48,30 +48,39 @@ let quests = [
     },
 
     {
-        quest: "Test add",
-        pick1: "1",
-        pick2: "2 Bob",
-        pick3: "4",
-        pick4: "3",
-        answer: 4,
+        quest: "What does the Curosity Rover do once a year?",
+        pick1: "Sing itself happy birthday",
+        pick2: "Go beep bepp and drive off",
+        pick3: "Collect space rocks and chuck it",
+        pick4: "None of the above",
+        answer: 1,
     },
 
     {
-        quest: "Alice Hunt",
-        pick1: "1",
-        pick2: "2",
-        pick3: "4",
-        pick4: "3",
-        answer: 4,
+        quest: "Which 5 Space organisations share the International space Station?",
+        pick1: "NASA, Roscosmos, JAXA, ESA, and CSA",
+        pick2: "NSA, MI6, CIA, UN, IMO",
+        pick3: "WIPO, IAEA, EU, NATO, ESA",
+        pick4: "None of the above",
+        answer: 1,
     },
 
     {
-        quest: "Ace Hunt",
-        pick1: "1",
-        pick2: "2",
-        pick3: "4",
-        pick4: "3",
-        answer: 4,
+        quest: "How often is Halley's Comet observed?",
+        pick1: "13 years",
+        pick2: "500 years",
+        pick3: "75-76 years",
+        pick4: "6 - 10 years",
+        answer: 3,
+    },
+
+    {
+        quest: "Which is fourth biggest moon of Jupiter and the smallest of the Galilean moons",
+        pick1: "IO",
+        pick2: "Europa",
+        pick3: "Ganymede",
+        pick4: "Callisto",
+        answer: 2,
     },
 ]
 
@@ -81,7 +90,7 @@ quests.splice(random_q, 1)
 console.log(quests)
 
 const points = 5
-const question_limit = 6
+const question_limit = 7
 
 start_quize = () => {
     q_count = 0
